@@ -1,0 +1,72 @@
+body {
+    font-family: times new roman;
+    background-image: url("IMG-20260118-WA0002.jpg");
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: gradient 5s ease infinite;
+    margin: 0%;
+    background-size: 125% 125%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+    background: rgba(0,0,0,0.65);
+    padding: 25px;
+    border-radius: 15px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-save { background: #00c9a7; }
+.btn-save:hover { background: #00b093; }
+
+.btn-rekap { background: #ffc107; }
+.btn-rekap:hover { background: #e0a800; }
+
+.btn-reset {
+    background: #dc3545;
+    color: white;
+}
+.btn-reset:hover { background: #c82333; }
+
+.rekap {
+    margin-top: 12px;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.quote {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 13px;
+    color: #ddd;
+}

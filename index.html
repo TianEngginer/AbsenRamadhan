@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TianMauFullPuasa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Absen Ramadhan</h2>
+
+    <input type="text" id="nama" placeholder="Nama Lengkap">
+
+    <input type="number" id="hari" placeholder="Hari Ramadhan (1-30)" min="1" max="30">
+
+    <select id="puasa">
+      <option value="">Puasa?</option>
+      <option value="ya">Ya</option>
+      <option value="tidak">Tidak</option>
+    </select>
+
+    <select id="tarawih">
+      <option value="">Tarawih?</option>
+      <option value="ya">Ya</option>
+      <option value="tidak">Tidak</option>
+    </select>
+
+    <button class="btn-save" onclick="simpanAbsen()">💾 Simpan Absen</button>
+    <button class="btn-rekap" onclick="lihatRekap()">📊 Lihat Rekap</button>
+    <button class="btn-reset" onclick="resetData()">♻ Reset Data</button>
+
+    <div class="rekap" id="rekap"></div>
+
+    <!-- Quotes -->
+    <div class="quote">Jibril menyampaikan wahyu, Fatur menyampaikan fakta</div>
+    <div class="quote">Ke pasar bareng ama Atin, mohon maaf lahir dan batin</div>
+    <div class="quote">Beli gas bareng Sigit, adakah sangon sedikit</div>
+    <div class="quote">Pak Selamet jualan sasa, selamat menjalankan ibadah puasa</div>
+    <div class="quote">Quotes by Dika</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
